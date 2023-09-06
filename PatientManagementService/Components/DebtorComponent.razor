@@ -1,0 +1,43 @@
+﻿@using AutoMapper;
+@using PatientManagementService.ViewModels;
+@using PatientManagementSystem.Data;
+@using PatientManagementSystem.Services.Interfaces;
+
+<MudTable @ref="_table" ServerData="@(new Func<TableState, Task<TableData<DebtorViewModel>>>(ServerReload))"
+    T="DebtorViewModel" SelectOnRowClick="true" Hover="true" Striped="true">    
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Phone Number</MudTh>
+        <MudTh>Email</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.FullName</MudTd>
+        <MudTd>@context.PhoneNumber</MudTd>
+        <MudTd>@context.Email</MudTd>
+    </RowTemplate>
+</MudTable>
+
+@code {
+    #region Services
+    [Inject] IMapper Mapper { get; set; }
+    [Inject] ISnackbar Snackbar { get; set; }
+    [Inject] IDebtorService debtorService { get; set; }
+
+    #endregion
+
+    private MudTable<DebtorViewModel> _table;
+
+    private async Task<TableData<DebtorViewModel>> ServerReload(TableState state) {
+        var debtors = Mapper.Map<List<DebtorViewModel>>(await debtorService.GetDebtorsAsync());
+        return new TableData<DebtorViewModel>() { TotalItems = debtors.Count, Items = debtors };
+    }
+
+    private async Task<bool> AddDebtor(DebtorViewModel debtor) {
+        var result = await debtorService.AddDebtorAsync(Mapper.Map<DebtorDto>(debtor)); 
+        if (result) {
+            Snackbar.Add("Debtor successfully added!");
+        } else {
+            Snackbar.Add("Failed to add debtor!");
+        }
+    }
+}

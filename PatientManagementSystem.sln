@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{54EDBAFE-06AB-405F-BD24-E5935BC78486}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B490E89E-DE22-4C82-B6D0-882C89BFE75F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{08EA2B77-183B-4537-B1C3-32448B76FFAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{3821CE50-6093-4BCD-924D-43FB17458250}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Common", "PatientManagementSystem.Common\PatientManagementSystem.Common.csproj", "{827AA31A-0084-4ED8-B6C1-BABF1C98E9D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Data", "PatientManagementSystem.Data\PatientManagementSystem.Data.csproj", "{1D27820E-1C6A-49C7-A14A-4AF0D80AD7C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Repositories", "PatientManagementSystem.Repositories\PatientManagementSystem.Repositories.csproj", "{D1714A2A-DB9C-4E0B-85C7-B73D0F809569}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Services", "PatientManagementSystem.Services\PatientManagementSystem.Services.csproj", "{C4A9C791-18F3-4406-88DC-2B1BE04984DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Services.Interfaces", "PatientManagementSystem.Services.Interfaces\PatientManagementSystem.Services.Interfaces.csproj", "{0B4EE073-E87E-420B-9C9B-5162DFDE3C31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Services.Tests", "PatientManagementSystem.Services.Tests\PatientManagementSystem.Services.Tests.csproj", "{53CD7B39-3266-496A-ABF7-02B30228A255}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Repositories.Interfaces", "PatientManagementSystem.Repositories.Interfaces\PatientManagementSystem.Repositories.Interfaces.csproj", "{E08469C6-44D4-4A88-A1A3-106EC758903B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementSystem.Repositories.Tests", "PatientManagementSystem.Repositories.Tests\PatientManagementSystem.Repositories.Tests.csproj", "{3FBABE83-DA47-4770-B324-117BB8E8FE7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{9A6C7E5A-EB2C-487F-ABC9-1CFC1A6DB29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagementService", "PatientManagementService\PatientManagementService.csproj", "{A438D2BF-63AD-42BD-A894-A1D356884C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagementSystem.Repositories.DomainModels", "PatientManagementSystem.Repositories.DomainModels\PatientManagementSystem.Repositories.DomainModels.csproj", "{8694DAE6-4924-43DC-80F3-0272EC58CC3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{827AA31A-0084-4ED8-B6C1-BABF1C98E9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827AA31A-0084-4ED8-B6C1-BABF1C98E9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827AA31A-0084-4ED8-B6C1-BABF1C98E9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827AA31A-0084-4ED8-B6C1-BABF1C98E9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D27820E-1C6A-49C7-A14A-4AF0D80AD7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D27820E-1C6A-49C7-A14A-4AF0D80AD7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D27820E-1C6A-49C7-A14A-4AF0D80AD7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D27820E-1C6A-49C7-A14A-4AF0D80AD7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1714A2A-DB9C-4E0B-85C7-B73D0F809569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1714A2A-DB9C-4E0B-85C7-B73D0F809569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1714A2A-DB9C-4E0B-85C7-B73D0F809569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1714A2A-DB9C-4E0B-85C7-B73D0F809569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A9C791-18F3-4406-88DC-2B1BE04984DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A9C791-18F3-4406-88DC-2B1BE04984DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A9C791-18F3-4406-88DC-2B1BE04984DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A9C791-18F3-4406-88DC-2B1BE04984DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4EE073-E87E-420B-9C9B-5162DFDE3C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4EE073-E87E-420B-9C9B-5162DFDE3C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4EE073-E87E-420B-9C9B-5162DFDE3C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4EE073-E87E-420B-9C9B-5162DFDE3C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CD7B39-3266-496A-ABF7-02B30228A255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CD7B39-3266-496A-ABF7-02B30228A255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CD7B39-3266-496A-ABF7-02B30228A255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CD7B39-3266-496A-ABF7-02B30228A255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08469C6-44D4-4A88-A1A3-106EC758903B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08469C6-44D4-4A88-A1A3-106EC758903B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08469C6-44D4-4A88-A1A3-106EC758903B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08469C6-44D4-4A88-A1A3-106EC758903B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBABE83-DA47-4770-B324-117BB8E8FE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBABE83-DA47-4770-B324-117BB8E8FE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBABE83-DA47-4770-B324-117BB8E8FE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBABE83-DA47-4770-B324-117BB8E8FE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A438D2BF-63AD-42BD-A894-A1D356884C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A438D2BF-63AD-42BD-A894-A1D356884C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A438D2BF-63AD-42BD-A894-A1D356884C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A438D2BF-63AD-42BD-A894-A1D356884C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8694DAE6-4924-43DC-80F3-0272EC58CC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8694DAE6-4924-43DC-80F3-0272EC58CC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8694DAE6-4924-43DC-80F3-0272EC58CC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8694DAE6-4924-43DC-80F3-0272EC58CC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{827AA31A-0084-4ED8-B6C1-BABF1C98E9D1} = {54EDBAFE-06AB-405F-BD24-E5935BC78486}
+		{1D27820E-1C6A-49C7-A14A-4AF0D80AD7C4} = {B490E89E-DE22-4C82-B6D0-882C89BFE75F}
+		{D1714A2A-DB9C-4E0B-85C7-B73D0F809569} = {3821CE50-6093-4BCD-924D-43FB17458250}
+		{C4A9C791-18F3-4406-88DC-2B1BE04984DA} = {08EA2B77-183B-4537-B1C3-32448B76FFAA}
+		{0B4EE073-E87E-420B-9C9B-5162DFDE3C31} = {08EA2B77-183B-4537-B1C3-32448B76FFAA}
+		{53CD7B39-3266-496A-ABF7-02B30228A255} = {08EA2B77-183B-4537-B1C3-32448B76FFAA}
+		{E08469C6-44D4-4A88-A1A3-106EC758903B} = {3821CE50-6093-4BCD-924D-43FB17458250}
+		{3FBABE83-DA47-4770-B324-117BB8E8FE7D} = {3821CE50-6093-4BCD-924D-43FB17458250}
+		{A438D2BF-63AD-42BD-A894-A1D356884C53} = {9A6C7E5A-EB2C-487F-ABC9-1CFC1A6DB29E}
+		{8694DAE6-4924-43DC-80F3-0272EC58CC3A} = {3821CE50-6093-4BCD-924D-43FB17458250}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFE5DC85-E8C3-4806-BF98-48495763A203}
+	EndGlobalSection
+EndGlobal
